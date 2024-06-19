@@ -5,8 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>BiliBoard-Voting：BiliBord 投票</title>
+    <script src="./script.js"></script>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    test
+    请在以下的列表中选择您需要投票的曲目
+    <div class="border">
+        <table>
+            <thead>
+                <tr>
+                    <th style="width: 0%"> </th>
+                    <th>曲目名称</th>
+                    <th style="width: 30%">曲目作者</th>
+                    <th style="width: 20%">上传时间</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <div id="Song_メズマライザー" class="radio_button" onclick="update_voting(this)" status="selected"></div>
+                    </td>
+                    <td>メズマライザー</td>
+                    <td>サツキ</td>
+                    <td>2024-05-13</td>
+                </tr>
+                
+            </tbody>
+        </table>
+    </div>
+    
+    <script>
+        
+    </script>
 </body>
 </html>

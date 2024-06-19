@@ -1,0 +1,50 @@
+/* 引入HarmonyOS系统默认字体 */
+@font-face
+{
+    font-family: "default";
+    src: url("./resource/font/HarmonyOS_Sans_SC_Light.ttf") format("truetype");
+}
+
+/* 设置全局生效的样式 */
+*
+{
+    font-size: 3vw;
+    font-family: "default";
+    font-weight: 200;
+}
+
+/* 简洁的Table样式 */
+table
+{
+    margin: 0.5px;
+    width: 99.8%;
+    border-collapse: collapse;
+}
+table > thead > tr > *
+{
+    text-align: center;
+}
+table > * > tr > *
+{
+    width: 22.5vw;
+    word-break: break-word;
+    border: 1px solid #1D1D1F;
+    border-width: 1;
+}
+table > * > tr > *
+{
+    padding: 1px;
+}
+
+/* 写一个关于单选按钮的UI */
+.radio_button
+{
+    background-color: white;
+    border: 1px solid black;
+    width: 20px;
+    height: 20px;
+}
+.radio_button[status="selected"]::before
+{
+    content: "Y"
+}
