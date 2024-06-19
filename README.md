@@ -1,2 +1,1 @@
 # BiliBoard-Voting
-# BiliBoard-Voting
