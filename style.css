@@ -8,7 +8,7 @@
 /* 设置全局生效的样式 */
 *
 {
-    font-size: 3vw;
+    font-size: 13px;
     font-family: "default";
     font-weight: 200;
 }
@@ -41,10 +41,14 @@ table > * > tr > *
 {
     background-color: white;
     border: 1px solid black;
-    width: 20px;
-    height: 20px;
 }
-.radio_button[status="selected"]::before
+
+/* 定义一些常见的样式 */
+.center
 {
-    content: "Y"
+    text-align: center;
+}
+.border
+{
+    border: 1px solid black;
 }

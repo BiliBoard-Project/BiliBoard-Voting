@@ -10,32 +10,41 @@
 </head>
 <body>
     请在以下的列表中选择您需要投票的曲目
-    <div class="border">
+    <div>
         <table>
             <thead>
                 <tr>
-                    <th style="width: 0%"> </th>
                     <th>曲目名称</th>
                     <th style="width: 30%">曲目作者</th>
                     <th style="width: 20%">上传时间</th>
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <td>
-                        <div id="Song_メズマライザー" class="radio_button" onclick="update_voting(this)" status="selected"></div>
-                    </td>
+                <tr onclick="update_choice(this)" id="Song_メズマライザー">
                     <td>メズマライザー</td>
                     <td>サツキ</td>
                     <td>2024-05-13</td>
                 </tr>
-                
             </tbody>
+            <tfoot>
+                <tr><td colspan="3"></td></tr>
+                <tr>
+                    <td colspan="3">
+                        test
+                    </td>
+                </tr>
+            </tfoot>
         </table>
     </div>
     
     <script>
+        if (!isMobileDevice()) {
+            document.body.outerHTML = "请尝试使用移动端设备访问此站点";
+        }
         
+        function update_choice(element) {
+            fetch("./vote?id=" + element.id)
+        }
     </script>
 </body>
 </html>
